@@ -7,23 +7,67 @@
   <title>Frontend Mentor | Order summary card</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap" rel="stylesheet">
   
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
-    .nested {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-items: center;
-  
-    }
 
+
+    
+    .dancing-man {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
     .summary {
       font-family: "red hat display";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: hsl(223, 47%, 23%);
     }
+    .description {
+      display: grid;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      font-family: "red hat display";
+      color: hsl(224, 23%, 55%);
+      
+    }
+.change-button {
+      display: grid;
+      grid-template-columns: 1fr 5fr 1fr;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+.iconm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttontxt {
+}
 
-
+.change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ;
+}
+.annual_plan {
+  font-family: "red hat display";
+  color: hsl(223, 47%, 23%);
+}
+.price {
+  font-family: "red hat display";
+      color: hsl(224, 23%, 55%);
+}
   </style>
 
 
@@ -33,13 +77,22 @@
 <body>
 <div class="nested">  
 
-  <div class="dancing-man"><img src="./images/illustration-hero.svg" alt="hero"></div>
+<img src="./images/illustration-hero.svg" alt="hero" class="dancing-man">
 
-  <div class="summary"><h1>Order summary</h1></div>
+ <h1 class="summary">Order summary</h1>
 
-  <div class="Annual-plan">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</div>
+ <p class="description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
  
-  <div class="change-button">change</div>
+  <div class="change-button">
+    
+    <div class="iconm"><img src="./images/icon-music.svg" alt="icon-music"></div>
+    <div class="buttontxt">
+      <h3 class="annual_plan">Annual Plan</h3>
+      <p class="price">$59.99/year</p>
+    </div>
+    <div class="change"><button type="button">Change</button></div>
+  
+  </div>
 
   <div class="payment-button">payment button</div>
  
